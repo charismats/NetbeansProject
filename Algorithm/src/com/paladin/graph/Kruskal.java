@@ -57,6 +57,7 @@ public class Kruskal {
         Collections.sort(listEdges);
         printAllEdgesInList();
         
+        //3. Process all edges and make union if necessary
         while( !listEdges.isEmpty() && !notFoundMST()){
             Edge removedEdge = listEdges.remove(0);
             int v1 = removedEdge.v1;
